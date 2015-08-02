@@ -11,11 +11,11 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport"/>
 	<meta content="" name="description"/>
 	<meta content="" name="author"/>
-
+	<script src="{{ asset("assets/scripts/vendor.js") }}" type="text/javascript"></script>
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/styles.css") }}" />
 	@yield('css')
 </head>
-<body>
+<body id="page-top">
 	@yield('body')
 	<script src="{{ asset("assets/scripts/frontend.js") }}" type="text/javascript"></script>
 
