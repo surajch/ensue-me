@@ -11,11 +11,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url ('') }}">ENSUE </a>
+                <a class="navbar-brand" href="{{ url ('/') }}">ENSUE </a>
             </div>
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
+                @if(\Auth::user())
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -220,12 +221,18 @@
                         <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="{{ url ('login') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="{{ url ('/auth/logout') }}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
                 <!-- /.dropdown -->
+                @else
+                    <li><a href="{{ url ('/') }}"> About</a>
+                    <li><a href="{{ url ('/auth/login') }}"> Login</a>
+                    <li><a href="{{ url ('/auth/register') }}"> Sign up</a>
+
+                @endif
             </ul>
             <!-- /.navbar-top-links -->
             

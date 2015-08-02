@@ -11,15 +11,9 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('welcome');
-});
+Route::get('/', 'WelcomeController@index');
 
-Route::get('/charts', function()
-{
-	return View::make('mcharts');
-});
+Route::get('/home', 'HomeController@index');
 
 Route::get('/tables', function()
 {
