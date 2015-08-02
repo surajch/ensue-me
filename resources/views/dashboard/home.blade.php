@@ -1,6 +1,5 @@
 @extends('layouts.dashboard')
 
-@yield('body')
-
-
+@section('content')
+HOME PAGE
 @stop

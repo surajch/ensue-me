@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/styles.css") }}" />
 	
 </head>
-<body id="page-top">
+<body>
 	@yield('body')
 	<script src="{{ asset("assets/scripts/frontend.js") }}" type="text/javascript"></script>
 
