@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url ('/') }}" style="display:inline">
+                <a class="navbar-brand" href="{{ url ('/') }}">
                     <img src="/img/logo_new.png" alt="Image" height="100%" max-height="100%" max-width="100%">
                 </a>
                     

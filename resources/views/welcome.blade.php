@@ -14,6 +14,8 @@
 	<script src="{{ asset("assets/scripts/vendor.js") }}" type="text/javascript"></script>
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/vendor.css") }}" />
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/theme-style.css") }}" />
+	<link rel="stylesheet" href="{{ asset("css/app.css") }}" />
+	<link rel="shortcut icon" href="{{ asset("img/favicon.ico") }}" />
 </head>
 <body id="page-top">
 	
@@ -27,7 +29,9 @@
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	            </button>
-	            <a class="navbar-brand page-scroll" href="#page-top">ensue</a>
+	            <a class="navbar-brand page-scroll" href="#page-top">
+	            	<img src="/img/logo_new.png" alt="Image" height="100%" max-height="100%" max-width="100%">
+	            </a>
 	        </div>
 
 	        <!-- Collect the nav links, forms, and other content for toggling -->
