@@ -28,7 +28,7 @@ class ProfileController extends BaseController {
 
 		$userObj->save();
 
-		return \Redirect::to('/home');
+		return \Redirect::to('/dashboard');
 
 		// $userData = User::find(\Auth::user()->id);
 
