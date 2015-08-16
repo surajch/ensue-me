@@ -9,7 +9,7 @@
 	<div class="col-md-3">
 
 		{{ Form::open([
-				'url' =>'/profile-photo/',
+				'url' =>'/dashboard/profile-photo/',
 				'enctype' => "multipart/form-data",
 				'method' => "POST"
 			])
@@ -37,7 +37,7 @@
 	<div class="col-md-9 personal-info">
 
 		{{ Form::open([
-			'url' => '/profile/'.$user->id,
+			'url' => '/dashboard/profile/'.$user->id,
 			'method' => 'PUT',
 			'class' => 'form-horizontal',
 			'role' => 'form'
@@ -92,7 +92,7 @@
 							<div class="col-md-8 text-right">
 								<input type="submit" class="btn btn-primary" value="Save Changes" />
 								<span></span>
-								<a href="{{ url('/home') }}" class="btn btn-danger" >Cancel
+								<a href="{{ url('/dashboard') }}" class="btn btn-danger" >Cancel
 								</a>
 							</div>
 						</div>  
@@ -136,7 +136,7 @@
 							<div class="col-md-8 text-right">
 								<input type="submit" class="btn btn-primary" value="Save Changes" />
 								<span></span>
-								<a href="{{ url('/home') }}" class="btn btn-danger" >Cancel
+								<a href="{{ url('/dashboard') }}" class="btn btn-danger" >Cancel
 								</a>
 							</div>
 						</div>  
@@ -180,7 +180,7 @@
 							<div class="col-md-8 text-right">
 								<input type="submit" class="btn btn-primary" value="Save Changes" />
 								<span></span>
-								<a href="{{ url('/home') }}" class="btn btn-danger" >Cancel
+								<a href="{{ url('/dahsboard') }}" class="btn btn-danger" >Cancel
 								</a>
 							</div>
 						</div>  

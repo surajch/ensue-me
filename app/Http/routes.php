@@ -13,10 +13,14 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('/home', 'HomeController@index');
-Route::resource('/profile', 'ProfileController');
 
-Route::post('/profile-photo', 'ImageController@getImage');
+Route::group(['prefix' => 'dashboard'], function(){
+	Route::get('/', 'HomeController@index');
+	Route::resource('/profile', 'ProfileController');
+	Route::post('/profile-photo', 'ImageController@getImage');
+});
+
+
 
 Route::get('/tables', function()
 {
