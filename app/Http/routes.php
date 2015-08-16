@@ -17,6 +17,13 @@ Route::group(['prefix' => 'dashboard'], function(){
 	Route::get('/', 'HomeController@index');
 	Route::resource('/profile', 'ProfileController');
 	Route::post('/profile-photo', 'ImageController@getImage');
+	Route::resource('/address', 'AddressController');
+	Route::resource('/membership', 'MembershipController');
+	Route::resource('/order', 'OrderController');
+	Route::resource('/role', 'RoleController');
+	Route::resource('/service-category', 'ServiceCategoryController');
+	Route::resource('/service', 'ServiceController');
+	Route::resource('/user-service-bucket', 'ServiceBucketController');
 });
 
 
