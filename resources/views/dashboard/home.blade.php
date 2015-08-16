@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
 
 @section('content')
-HOME PAGE
+	<div class="well">HOME PAGE</div>
 @stop
