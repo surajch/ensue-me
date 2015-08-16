@@ -14,6 +14,8 @@
 	<script src="{{ asset("assets/scripts/vendor.js") }}" type="text/javascript"></script>
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/vendor.css") }}" />
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/styles.css") }}" />
+	<link rel="stylesheet" href="{{ asset("css/app.css") }}" />
+	<link rel="shortcut icon" href="{{ asset("img/favicon.ico") }}" />
 	
 </head>
 <body>

@@ -1,1 +1,1 @@
-{"version":3,"sources":["app.css"],"names":[],"mappings":"AAAA","file":"app.css","sourcesContent":[],"sourceRoot":"/source/"}
+{"version":3,"sources":["app.less","app.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,kBAAA;EACA,gBAAA;EACA,kBAAA;CCCH","file":"app.css","sourcesContent":[".navbar-brand {\n    float: left;\n    height: 50px;\n    padding: 5px 15px;\n    font-size: 18px;\n    line-height: 20px;\n}",".navbar-brand {\n  float: left;\n  height: 50px;\n  padding: 5px 15px;\n  font-size: 18px;\n  line-height: 20px;\n}\n"],"sourceRoot":"/source/"}
