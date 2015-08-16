@@ -8,7 +8,7 @@ class WelcomeController extends Controller {
 	public function index()
 	{
 		if(\Auth::user())
-			return \Redirect::to('/home');
+			return \Redirect::to('/dashboard');
 
 		return view('welcome');
 	}
