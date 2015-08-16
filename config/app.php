@@ -146,6 +146,7 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
+		'Laracasts\Flash\FlashServiceProvider'
 
 	],
 
@@ -197,6 +198,7 @@ return [
 		'Form'		=> 'Illuminate\Html\FormFacade',
 		'HTML'		=> 'Illuminate\Html\HtmlFacade',
 		'Image' 	=> 'Intervention\Image\Facades\Image',
+		'Flash' 	=> 'Laracasts\Flash\Flash'
 
 
 
