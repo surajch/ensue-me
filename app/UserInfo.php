@@ -1,9 +1,10 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Watson\Validating\ValidatingTrait;
 
 class UserInfo extends Model {
-
+	use ValidatingTrait;
 	/**
 	 * The database table used by the model.
 	 *

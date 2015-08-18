@@ -1,11 +1,13 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Watson\Validating\ValidatingTrait;
 
 class Order extends Model {
+	use ValidatingTrait;
 
 	/**
-	 * The database table used by the model.
+		 * The database table used by the model.
 	 *
 	 * @var string
 	 */
