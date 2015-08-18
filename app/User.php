@@ -27,7 +27,11 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		 'email', 
 		 'password', 
 		 'role_id'
-	 ];
+	];
+
+	protected $rules = [
+		'email' => 'required | email'
+	];
 
 	/**
 	 * The attributes excluded from the model's JSON form.
