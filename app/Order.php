@@ -22,6 +22,12 @@ class Order extends Model {
 		'user_id'
 	];
 
+	protected $rules = [
+		'service_id' => 'required | integer',
+		'status' => 'required',
+		'user_id' => 'required'
+	];
+
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *

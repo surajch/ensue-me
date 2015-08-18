@@ -21,6 +21,12 @@ class Membership extends Model {
 		'subscription_price_per_month'
 	];
 
+
+	protected $rules = [
+		'name' => 'required',
+		'address1' => 'required'
+	];
+
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *

@@ -23,6 +23,12 @@ class Service extends Model {
 		'details'
 	];
 
+	protected $rules = [
+		'name' => 'required ',
+		'service_category_id' => 'required | integer',
+		'price_per_month' =>'required | integer',
+		'details' => '',
+		];
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *

@@ -24,6 +24,16 @@ class MembershipService extends Model {
 		'limit'
 	];
 
+
+	protected $rules = [
+		'membership_id' => 'required | integer',
+		'service_id' => 'required | integer',
+		'frequency_interval' => 'required',
+		'frequency_count' => 'required',
+		'limit' => 'required',
+		
+	];
+
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *

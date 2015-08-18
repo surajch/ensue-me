@@ -20,6 +20,12 @@ class Role extends Model {
 		'type'
 	];
 
+
+	protected $rules = [
+		'type' => 'required'
+	];
+
+
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *

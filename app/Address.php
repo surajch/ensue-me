@@ -28,6 +28,17 @@ class Address extends Model {
 		'landmark'
 	];
 
+	protected $rules = [
+		'user_id' => 'required | integer',
+		'address1' => 'required',
+		'address2' => '',
+		'city' => 'required',
+		'country' => 'required',
+		'pin' => 'required | integer',
+		'phone' => 'required | integer',
+		'landmark' => ''
+	];
+
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *
