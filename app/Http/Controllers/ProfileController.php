@@ -20,21 +20,17 @@ class ProfileController extends BaseController {
 	{
 
 		$data = \Input::all();
-
+		
 		if(empty($data)){	
 			return \Redirect::back()->withErrors('Empty data.');
 		}
 		
-		try {
-			$userObj = User::find($id);
+		$userObj = User::find($id);
+		$userObj->name = $data['name'];
+		$userObj->email = $data['email'];
 
-			$userObj->name = $data['name'];
-			$userObj->email = $data['email'];
-
-			$userObj->save();
-		} catch (Exception $e) {
-			return \Redirect::back()->withErrors($e->getMessage());
-		}
+		if(!$userObj->save())
+			return \Redirect::back()->withErrors($userObj->getErrors())->withInput();
 
 		return \Redirect::to('/dashboard');
 

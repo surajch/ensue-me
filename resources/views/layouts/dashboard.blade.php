@@ -14,7 +14,6 @@
 
                 <a class="navbar-brand" href="{{ url ('/') }}">
                     <img src="/img/logo_new.png" alt="Image" height="100%" max-height="100%" max-width="100%">
-
                 </a>
                     
             </div>
@@ -164,6 +163,7 @@
 
         <div class="page-content">
             <div class="container">
+                @include('growl')
                 @yield('content')
                 
             </div>
