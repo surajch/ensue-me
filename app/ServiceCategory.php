@@ -20,6 +20,10 @@ class ServiceCategory extends Model {
 		'name'
 	];
 
+	protected $rules = [
+		'name' => 'required'
+	];
+
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *
