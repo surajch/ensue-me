@@ -2,4 +2,5 @@
 
 @section('content')
 	<div class="well">ORDER PAGE</div>
+	
 @stop
