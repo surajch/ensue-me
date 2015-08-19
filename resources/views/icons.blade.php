@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
-@section('page_heading','Icons')
-@section('section')
+@section('page-heading','Buttons')
+@section('content')
 	<div class="col-sm-12">
 		@section ('icons_panel_title','Icons')
 		@section ('icons_panel_body')

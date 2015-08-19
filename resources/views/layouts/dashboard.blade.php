@@ -166,7 +166,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 clearfix">
-                        <h3>@yield('heading')</h3>
+                        <h4>@yield('heading')</h4>
                     </div>
                 </div>
             </div>

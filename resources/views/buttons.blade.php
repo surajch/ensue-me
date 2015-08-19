@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
-@section('page_heading','Buttons')
-@section('section')
+@section('page-heading','Buttons')
+@section('content')
 	<div class="col-sm-6">
 		@section ('5button_panel_title','Default Buttons')
 		@section ('5button_panel_body')

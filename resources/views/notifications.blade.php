@@ -1,8 +1,7 @@
 @extends ('layouts.dashboard')
 
-@section ('page_heading','Alerts')
-
-@section('section')
+@section('page-heading','Buttons')
+@section('content')
 </div>
 	@section ('alert1_panel_title','Regular Alerts')
 	@section ('alert1_panel_body')

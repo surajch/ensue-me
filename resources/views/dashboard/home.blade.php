@@ -2,4 +2,5 @@
 @section('heading', "HOME PAGE")
 @section('content')
 
+
 @stop

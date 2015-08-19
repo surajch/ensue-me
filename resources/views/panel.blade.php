@@ -1,8 +1,7 @@
 @extends('layouts.dashboard')
 
-@section('page_heading','Panels and Collapsibles')
-
-@section('section')
+@section('page-heading','Buttons')
+@section('content')
 	<div class="col-sm-6">
 		@section ('panel1_panel_title', 'Default title')
 		@section ('panel1_panel_body')

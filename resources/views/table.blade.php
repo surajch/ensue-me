@@ -1,7 +1,6 @@
 @extends('layouts.dashboard')
-@section('page_heading','Tables')
-
-@section('section')
+@section('page-heading','Buttons')
+@section('content')
 <div class="col-sm-12">
 <div class="row">
 	<div class="col-sm-6">

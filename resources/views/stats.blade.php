@@ -2,7 +2,8 @@
 
 @section('page_title')	Stats @stop
 
-@section('section')
+@section('page-heading','Buttons')
+@section('content')
 <h2>Stats</h2>
 
 	@include('widgets.stat', array('icon'=> 'whatsapp', 'header'=> 'Views', 'value'=>'71,842', 'href'=>'#', 'color'=>'primary'))

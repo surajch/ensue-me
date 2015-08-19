@@ -1,10 +1,8 @@
 @extends ('layouts.dashboard')
 
 @section('page_title')	Progressbar @stop
-@section('page_heading','Progressbar')
-@section('section')
-
-
+@section('page-heading','Buttons')
+@section('content')
 <div class="row">
 	<div class="col-sm-6">
 		@section ('progress_panel_body')
