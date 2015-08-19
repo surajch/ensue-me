@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-
+@section('heading', "login page")
 @section('content')
 <div class="container-fluid">
 	<div class="row">

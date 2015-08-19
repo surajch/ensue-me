@@ -5,8 +5,6 @@ use Watson\Validating\ValidatingTrait;
 
 class Address extends Model {
 	use ValidatingTrait;
-
-
 	/**
 	 * The database table used by the model.
 	 *
