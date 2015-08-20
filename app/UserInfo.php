@@ -26,7 +26,8 @@ class UserInfo extends Model {
 		'country',
 		'pin',
 		'description',
-		'phone'
+		'phone',
+		'user_id'
 	];
 
 	/**

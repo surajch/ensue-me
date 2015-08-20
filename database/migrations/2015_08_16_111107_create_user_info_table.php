@@ -24,6 +24,7 @@ class CreateUserInfoTable extends Migration {
 			$table->integer('pin');
 			$table->integer('phone');
 			$table->string('description', 255);
+			$table->integer('user_id');
 			$table->timestamps();
 		});
 		//
