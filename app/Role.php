@@ -18,12 +18,12 @@ class Role extends Model {
 	 * @var array
 	 */
 	protected $fillable = [
-		'type'
+		'role_type'
 	];
 
 
 	protected $rules = [
-		'type' => 'required'
+		'role_type' => 'required'
 	];
 
 

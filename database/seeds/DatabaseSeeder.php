@@ -18,7 +18,12 @@ class DatabaseSeeder extends Seeder {
 		$this->call('ServicesTableSeeder');
 		$this->call('UserServiceBucketTableSeeder');
 		$this->call('AddressTableSeeder');
-
+		$this->call('UserTableSeeder');
+		$this->call('MembershipTableSeeder');
+		$this->call('MembershipServiceTableSeeder');
+		$this->call('OrderTableSeeder');
+		$this->call('RoleTableSeeder');
+		$this->call('ServiceCategoryTableSeeder');
 	}
 
 }
