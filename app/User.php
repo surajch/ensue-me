@@ -28,7 +28,10 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		 'email', 
 		 'password', 
 		 'role_id'
+
+
 	];
+	
 
 	protected $rules = [
 		'email' => 'required | email',
@@ -41,5 +44,10 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 * @var array
 	 */
 	protected $hidden = ['password', 'remember_token'];
+
+	public function userInfo()
+    {
+        return $this->hasOne('App\UserInfo');
+    }
 
 }

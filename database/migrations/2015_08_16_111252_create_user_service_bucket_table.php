@@ -18,6 +18,7 @@ class CreateUserServiceBucketTable extends Migration {
 			$table->integer('user_id') ;
 			$table->integer('service_id');
 			$table->integer('service_remaining');
+			$table->integer('total_service');
 			$table->timestamps();
 		});
 	}

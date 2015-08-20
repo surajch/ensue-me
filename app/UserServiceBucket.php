@@ -10,7 +10,7 @@ class UserServiceBucket extends Model {
 	 *
 	 * @var string
 	 */
-	protected $table = 'user_service_bucket';
+	protected $table = 'service_bucket';
 
 	/**
 	 * The attributes that are mass assignable.
@@ -20,7 +20,7 @@ class UserServiceBucket extends Model {
 	protected $fillable = [
 		'user_id', 
 		'service_id', 
-		'service_remaining', 
+		'service_remaining',
 		'total_service'
 	];
 
