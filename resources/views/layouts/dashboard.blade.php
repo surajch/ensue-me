@@ -23,6 +23,16 @@
 
                 <ul class="nav navbar-top-links navbar-right">
                     @if(\Auth::user())
+                    <li class="dropdown open">
+                        <a href="#" class="dropdown-toggle user" data-toggle="dropdown" aria-expanded="true">
+                        <img src="/img/logo_new.png" alt="Bill" class="img-circle" width="40"> Bill <span class="caret"></span>
+                       <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ url ('/dashboard/profile') }}">Profile</a></li>
+                            <li><a href="user-private-messages.html">Messages</a></li>
+                            <li><a href="login.html">Logout</a></li>
+                          </ul>
+                        </a>
+                    </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
