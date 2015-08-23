@@ -6,7 +6,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8"/>
-	<title>ENSUE</title>
+	<title>Ensue | Partners for life</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport"/>
 	<meta content="" name="description"/>
@@ -14,6 +14,8 @@
 	<script src="{{ asset("assets/scripts/vendor.js") }}" type="text/javascript"></script>
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/vendor.css") }}" />
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/theme-style.css") }}" />
+	<link rel="stylesheet" href="{{ asset("css/app.css") }}" />
+	<link rel="shortcut icon" href="{{ asset("img/favicon.ico") }}" />
 </head>
 <body id="page-top">
 	
@@ -27,7 +29,9 @@
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	            </button>
-	            <a class="navbar-brand page-scroll" href="#page-top">ensue</a>
+	            <a class="navbar-brand page-scroll" href="#page-top">
+	            	<img src="/img/logo_new.png" alt="Image" height="100%" max-height="100%" max-width="100%">
+	            </a>
 	        </div>
 
 	        <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,7 +79,7 @@
 	            <div class="col-lg-8 col-lg-offset-2 text-center">
 	                <h2 class="section-heading">We've got what you need!</h2>
 	                <hr class="light">
-	                <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+	                <p class="text-faded">Your one stop destination for all services</p>
 	                <a href="#" class="btn btn-default btn-xl">Get Started!</a>
 	            </div>
 	        </div>
@@ -225,8 +229,8 @@
 	<aside class="bg-dark">
 	    <div class="container text-center">
 	        <div class="call-to-action">
-	            <h2>Free Download at Start Bootstrap!</h2>
-	            <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+	            <h2>Ensue services</h2>
+	            <a href="#" class="btn btn-default btn-xl wow tada">List of services</a>
 	        </div>
 	    </div>
 	</aside>
@@ -237,15 +241,15 @@
 	            <div class="col-lg-8 col-lg-offset-2 text-center">
 	                <h2 class="section-heading">Let's Get In Touch!</h2>
 	                <hr class="primary">
-	                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+	                <p>Give us a call or send us an email and we will get back to you as soon as possible!</p>
 	            </div>
 	            <div class="col-lg-4 col-lg-offset-2 text-center">
-	                <i class="fa fa-phone fa-3x wow bounceIn"></i>
-	                <p>123-456-6789</p>
+	                <i class="fa fa-phone fa-3x wow bounceIn" data-wow-delay=".5s"></i>
+	                <p>0-123-456-6789</p>
 	            </div>
 	            <div class="col-lg-4 text-center">
-	                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-	                <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+	                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".5s"></i>
+	                <p><a href="mailto:your-email@your-domain.com">feedback@ensue.me</a></p>
 	            </div>
 	        </div>
 	    </div>

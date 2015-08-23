@@ -1,9 +1,10 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Watson\Validating\ValidatingTrait;
 
 class Service extends Model {
-
+	use ValidatingTrait;
 	/**
 	 * The database table used by the model.
 	 *
@@ -23,6 +24,12 @@ class Service extends Model {
 		'details'
 	];
 
+	protected $rules = [
+		'name' => 'required ',
+		'service_category_id' => 'required | integer',
+		'price_per_month' =>'required | integer',
+		'details' => '',
+		];
 	/**
 	 * The attributes excluded from the model's JSON form.
 	 *

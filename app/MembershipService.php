@@ -1,9 +1,10 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Watson\Validating\ValidatingTrait;
 
 class MembershipService extends Model {
-
+	use ValidatingTrait;
 	/**
 	 * The database table used by the model.
 	 *
@@ -22,6 +23,16 @@ class MembershipService extends Model {
 		'frequency_interval', 
 		'frequency_count',
 		'limit'
+	];
+
+
+	protected $rules = [
+		'membership_id' => 'required | integer',
+		'service_id' => 'required | integer',
+		'frequency_interval' => 'required',
+		'frequency_count' => 'required',
+		'limit' => 'required',
+		
 	];
 
 	/**

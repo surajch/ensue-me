@@ -6,7 +6,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8"/>
-	<title>ENSUE</title>
+	<title>Ensue | Partners for life</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport"/>
 	<meta content="" name="description"/>
@@ -14,6 +14,8 @@
 	<script src="{{ asset("assets/scripts/vendor.js") }}" type="text/javascript"></script>
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/vendor.css") }}" />
 	<link rel="stylesheet" href="{{ asset("assets/stylesheets/styles.css") }}" />
+	<link rel="stylesheet" href="{{ asset("css/app.css") }}" />
+	<link rel="shortcut icon" href="{{ asset("img/favicon.ico") }}" />
 	
 </head>
 <body>

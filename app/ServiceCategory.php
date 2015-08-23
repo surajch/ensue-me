@@ -1,9 +1,10 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Watson\Validating\ValidatingTrait;
 
 class ServiceCategory extends Model {
-
+	use ValidatingTrait;
 	/**
 	 * The database table used by the model.
 	 *
@@ -18,6 +19,10 @@ class ServiceCategory extends Model {
 	 */
 	protected $fillable = [
 		'name'
+	];
+
+	protected $rules = [
+		'name' => 'required'
 	];
 
 	/**

@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
-
+@section('heading', "HOME PAGE")
 @section('content')
-	<div class="well">HOME PAGE</div>
+
 	<!-- /.row -->
             <div class="col-sm-12">
             <div class="row">
@@ -405,4 +405,7 @@
 
                 <!-- /.col-lg-4 -->
             
+=======
+
+>>>>>>> master
 @stop

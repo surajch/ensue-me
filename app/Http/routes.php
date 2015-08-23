@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'WelcomeController@index');
+Route::get('/home', 'HomeController@index');
 
 Route::group(['prefix' => 'dashboard'], function(){
 	Route::get('/', 'HomeController@index');
@@ -30,6 +31,11 @@ Route::group(['prefix' => 'dashboard'], function(){
 Route::get('/tables', function()
 {
 	return View::make('table');
+});
+
+Route::get('/hometest', function()
+{
+	return View::make('home');
 });
 
 Route::get('/forms', function()
