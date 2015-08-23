@@ -42,6 +42,11 @@ Route::get('/tables', function()
 	return View::make('table');
 });
 
+Route::get('/hometest', function()
+{
+	return View::make('home');
+});
+
 Route::get('/forms', function()
 {
 	return View::make('form');
