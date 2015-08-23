@@ -40,8 +40,8 @@ class State extends Model {
 	 *
 	 * @var array
 	 */
-	public function scopeBuildQuery($query)
-	{
-		return $query;
-	}
+	// public function scopeBuildQuery($query)
+	// {
+	// 	return $query;
+	// }
 }
