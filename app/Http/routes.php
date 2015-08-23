@@ -14,6 +14,8 @@
 Route::get('/', 'WelcomeController@index');
 Route::get('/test', 'TestController@index');
 Route::get('/home', 'HomeController@index');
+Route::get('facebook', 'AccountController@facebook_redirect');
+Route::get('account/facebook', 'AccountController@facebook');
 
 Route::group(['prefix' => 'dashboard'], function(){
 	Route::get('/', 'HomeController@index');
