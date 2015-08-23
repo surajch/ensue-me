@@ -1,6 +1,8 @@
 <?php namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+
+use EchoIt\JsonApi\Model;
+
 use Watson\Validating\ValidatingTrait;
 
 class State extends Model {
@@ -38,5 +40,8 @@ class State extends Model {
 	 *
 	 * @var array
 	 */
-
+	public function scopeBuildQuery($query)
+	{
+		return $query;
+	}
 }

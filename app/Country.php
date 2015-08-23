@@ -1,9 +1,11 @@
 <?php namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+//use Illuminate\Database\Eloquent\Model;
+use EchoIt\JsonApi\Model;
 use Watson\Validating\ValidatingTrait;
 
 class Country extends Model {
+
 	use ValidatingTrait;
 
 	public $timestamps = false;
@@ -36,5 +38,10 @@ class Country extends Model {
 	 *
 	 * @var array
 	 */
+	public function scopeBuildQuery($query)
+	{
+		return $query;
+	}
+
 
 }
