@@ -55,7 +55,20 @@
 <body>
 	@yield('body')
 	<script src="{{ asset("assets/scripts/frontend.js") }}" type="text/javascript"></script>
-
+	<style type="text/css">
+		.mfp-no-margins img.mfp-img {
+			padding: 0;
+		}
+		/* position of shadow behind the image */
+		.mfp-no-margins .mfp-figure:after {
+			top: 0;
+			bottom: 0;
+		}
+		/* padding for main container */
+		.mfp-no-margins .mfp-container {
+			padding: 0;
+		}
+	</style>
 	@yield('scripts')
 </body>
 </html>
