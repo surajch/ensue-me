@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-<?php namespace App\Http\Controllers\Api\V1;
-
-use App\Http\Controllers\Controller;
-
-/**
-* 
-*/
-class ApiController extends Controller
-{
-		
-	function __construct()
-	{
-		
-	}
-
-	public function index($query=null){
-		echo "$query";
-	}
-=======
 <?php namespace App\Http\Controllers\api\v1;
 
 use App\Http\Controllers\Controller;
@@ -73,5 +53,4 @@ class ApiController extends Controller
         // If a handler class does not exist for requested model, it is not considered to be exposed in the API
         return new ApiErrorResponse(404, 404, 'Entity not found');
     }
->>>>>>> 5325a013ac50a00aa44851f563b76cd94c6c4ac1
 }
