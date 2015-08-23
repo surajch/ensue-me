@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ae00c85a2f250380002e6c23ab3b25fb",
+    "hash": "87c586b5a1482ef7190c4e96178e4162",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -221,6 +221,52 @@
                 "string"
             ],
             "time": "2014-12-20 21:24:13"
+        },
+        {
+            "name": "echo-it/laravel-jsonapi",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/echo-it/laravel-jsonapi.git",
+                "reference": "336c477690e23497686ae0e584abdded68425508"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/echo-it/laravel-jsonapi/zipball/336c477690e23497686ae0e584abdded68425508",
+                "reference": "336c477690e23497686ae0e584abdded68425508",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.0.*",
+                "illuminate/http": "5.0.*",
+                "illuminate/pagination": "5.0.*",
+                "illuminate/support": "5.0.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "EchoIt\\JsonApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ronni Egeriis Persson",
+                    "email": "ronni@egeriis.me"
+                },
+                {
+                    "name": "Jared Chapiewsky",
+                    "email": "chapiewsky@earthlinginteractive.com"
+                }
+            ],
+            "time": "2015-03-03 14:17:31"
         },
         {
             "name": "guzzle/guzzle",

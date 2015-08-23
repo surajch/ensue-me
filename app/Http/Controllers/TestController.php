@@ -2,7 +2,7 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\City;
+use App\Country;
 use Illuminate\Http\Request;
 
 class TestController extends Controller {
@@ -14,7 +14,7 @@ class TestController extends Controller {
 	 */
 	public function index()
 	{
-		$user = City::with('state', 'state.country')->find(435)->toArray();
+		$user = Country::with('states', 'states.cities')->find(229)->toArray();
 		     echo '<pre>';
 			print_r($user);
 			echo '</pre>';

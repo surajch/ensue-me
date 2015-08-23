@@ -30,10 +30,11 @@ Route::group(['prefix' => 'dashboard'], function(){
 	Route::resource('/user-service-bucket', 'UserServiceBucketController');
 });
 
-Route::group(['prefix' => 'api/v1', 'namespace' => 'api\v1'], function(){
-	Route::resource('/country', 'CountryController');
-});
 
+
+Route::group(['prefix' => 'api/v1', 'namespace' => 'api\v1'], function(){
+	Route::any('{model}/{id?}', 'ApiController@handleRequest');
+});
 
 
 Route::get('/tables', function()
