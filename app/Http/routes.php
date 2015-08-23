@@ -38,6 +38,58 @@ Route::group(['prefix' => 'api/v1', 'namespace' => 'api\v1'], function(){
 });
 
 
+
+Route::get('login/fb', function() {
+    $facebook = new Facebook(Config::get('facebook'));
+    $params = array(
+        'redirect_uri' => url('/login/fb/callback'),
+        'scope' => 'email',
+        'fields'=>'email'
+    );
+    return Redirect::to($facebook->getLoginUrl($params));
+});
+
+
+Route::get('login/fb/callback', function() {
+    $code = \Input::get('code');
+    if (strlen($code) == 0) return Redirect::to('/')->with('message', 'There was an error communicating with Facebook');
+
+    $facebook = new Facebook(Config::get('facebook'));
+    $uid = $facebook->getUser();
+
+    if ($uid == 0) return \Redirect::to('/')->with('message', 'There was an error');
+
+    $me = $facebook->api('/me?fields=email,name');
+
+    $profile = App\Profile::whereUid($uid)->first();
+    if (empty($profile)) {
+
+        $user = new App\User;
+        $user->name = $me['name'];
+        $user->email = $me['email'];
+       //$user->photo = 'https://graph.facebook.com/'.$me['username'].'/picture?type=large';
+
+        $user->save();
+
+        $profile = new App\Profile;
+        $profile->uid = $uid;
+        $profile->user_id = $user->id;
+        $profile->username = $me['name'];
+        //$profile = $user->profiles()->save($profile);
+    }
+
+    $profile->access_token = $facebook->getAccessToken();
+    $profile->save();
+
+    $user = $profile->user;
+
+    \Auth::login($user);
+
+    \Flash::success('Logged in succesfully with facebook');
+
+    return \Redirect::to('/dashboard');
+});
+
 Route::get('/tables', function()
 {
 	return View::make('table');

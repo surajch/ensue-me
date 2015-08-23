@@ -54,6 +54,13 @@
 								<a href="/password/email">Forgot Your Password?</a>
 							</div>
 						</div>
+						<div class="form-group">
+							<div class="col-md-6 col-md-offset-4">
+								<a href="/login/fb" class="btn btn-block btn-social btn-facebook">
+            						<i class="fa fa-facebook"></i> &nbsp; &nbsp; &nbsp; &nbsp; Sign in with Facebook
+          						</a>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>

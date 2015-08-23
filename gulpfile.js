@@ -19,7 +19,8 @@ elixir(function(mix) {
     // verdor styles
     mix.styles([
         './bower_components/bootstrap/dist/css/bootstrap.css',
-        './bower_components/fontawesome/css/font-awesome.css'
+        './bower_components/fontawesome/css/font-awesome.css',
+        './bower_components/bootstrap-social/bootstrap-social.css'
     ], 'public/assets/stylesheets/vendor.css');
 
     // styles for user and admin view

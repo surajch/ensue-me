@@ -28,8 +28,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		 'email', 
 		 'password', 
 		 'role_id'
-
-
 	];
 	
 
@@ -50,4 +48,8 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
         return $this->hasOne('App\UserInfo');
     }
 
+    public function profiles()
+    {
+        return $this->hasMany('Profile');
+    }
 }
