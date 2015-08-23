@@ -2,5 +2,8 @@
   "devDependencies": {
     "gulp": "^3.8.11",
     "laravel-elixir": "*"
+  },
+  "dependencies": {
+    "select2": "^4.0.0"
   }
 }

@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\City;
+
 use Illuminate\Http\Request;
 
 class TestController extends Controller {
@@ -14,14 +15,17 @@ class TestController extends Controller {
 	 */
 	public function index()
 	{
-		$user = City::with('state', 'state.country')->find(435)->toArray();
-		     echo '<pre>';
-			print_r($user);
-			echo '</pre>';
+		// $user = City::with('state', 'state.country')->find(2763)->toArray();
+		//      echo '<pre>';
+		// 	print_r($user);
+		// 	echo '</pre>';
 		
-		die;
+		// die;
+
+		return view('dashboard/test');
 
 	}
+	
 
 	/**
 	 * Show the form for creating a new resource.

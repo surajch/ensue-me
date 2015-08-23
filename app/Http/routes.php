@@ -29,6 +29,12 @@ Route::group(['prefix' => 'dashboard'], function(){
 });
 
 
+
+Route::group(['prefix' => 'api/v1', 'namespace' => 'api\v1'], function(){
+	Route::get('/country', 'CountryController@index');
+});
+
+
 Route::get('/tables', function()
 {
 	return View::make('table');

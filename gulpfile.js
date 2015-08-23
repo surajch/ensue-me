@@ -22,10 +22,18 @@ elixir(function(mix) {
         './bower_components/fontawesome/css/font-awesome.css'
     ], 'public/assets/stylesheets/vendor.css');
 
+    // vendor scripts
+    mix.scripts([
+        'bower_components/jquery/dist/jquery.js',
+        'bower_components/bootstrap/dist/js/bootstrap.js',
+        '/node_modules/select2/dist/js/select2.min.js'
+    ], 'public/assets/scripts/vendor.js', './');
+
     // styles for user and admin view
     mix.styles([
         'resources/css/sb-admin-2.css',
         'resources/css/timeline.css',
+        '/node_modules/select2/dist/css/select2.min.css',
     ], 'public/assets/stylesheets/styles.css', './');
 
     // style for welcome page (bootstrap theme)
@@ -34,11 +42,6 @@ elixir(function(mix) {
         'resources/css/creative.css'
     ], 'public/assets/stylesheets/theme-style.css', './');
 
-    // vendor scripts
-    mix.scripts([
-        'bower_components/jquery/dist/jquery.js',
-        'bower_components/bootstrap/dist/js/bootstrap.js',
-    ], 'public/assets/scripts/vendor.js', './');
 
     // scripts for user and admin view
     mix.scripts([
