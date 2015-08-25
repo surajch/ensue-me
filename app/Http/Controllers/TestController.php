@@ -14,8 +14,8 @@ class TestController extends Controller {
 	 */
 	public function index()
 	{
-		$user = Country::with('states', 'states.cities')->find(229)->toArray();
-		     echo '<pre>';
+		$user = Country::with('states', 'states.cities')->find(101)->toArray();
+		    echo '<pre>';
 			print_r($user);
 			echo '</pre>';
 		
